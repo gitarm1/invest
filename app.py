@@ -15,7 +15,7 @@ email.set_content("Вы расчитали доход от вклада в те�
 
 
 
-bot = telebot.TeleBot("1256275471:AAE5rTB_mX04NLZKehHmAUC1OzRk9RMM8ZA")
+bot = telebot.TeleBot("1242999554:AAFtFrFDrv7oRFVWaMBS7lm2brxFJD8fnho")
 
 
 def keyboard():
