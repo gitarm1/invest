@@ -133,8 +133,7 @@ def callback_inline(call):
 
 
         if call.data == "das":
-            bot.send_message(call.message.chat.id, 'СПАСИБО, НА ВАШ ПОЧТОВЫЙ ЯЩИК ПРИДЕТ СООБЩЕНИЕ С ДОКУМЕНТАМИ.')
-
+            bot.send_message(call.message.chat.id, 'Пожалуйста, укажите почту')
         if call.data == "nets":
             bot.send_message(call.message.chat.id, 'Спасибо, что пользуетесь нашими услугами!')
 
@@ -153,7 +152,7 @@ def send1_text(message):
             smtp.login("investsiberiatech@gmail.com", "12735334")
             smtp.send_message(email)
             print('Task Executed')
-        bot.send_message(message.chat.id, 'Спасибо, сообщение отправлено на вашу почту')
+        bot.send_message(message.chat.id, 'СПАСИБО, НА ВАШ ПОЧТОВЫЙ ЯЩИК ПРИДЕТ СООБЩЕНИЕ С ДОКУМЕНТАМИ.') 
 
     else:
         bot.send_message(message.chat.id, 'Пожалуйста, укажите действительную почту')
