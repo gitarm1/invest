@@ -115,7 +115,7 @@ def callback_inline(call):
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = s)
                 bot.send_message(call.message.chat.id, "Хотели бы вы сделать вклад?", reply_markup = keyboard)
             if time == 't0.5':
-                s = f"Ваш доход при периоде {time_dict[time]}, сумме вноса {amount[1:]}000 рублей и ставке реинвестирования {reinvesting[1:]}% составит {profit}000 р. за полгода и {profit*2}000р за год"
+                s = f"Ваш доход при периоде {time_dict[time]}, сумме вноса {amount[1:]}000 р. и ставке реинвестирования {reinvesting[1:]}% составит {profit}000 р. за полгода и {profit*2}000 р. за год"
                 if coef != 1.0:
                     s+= f" и будет увеличиваться каждый год в геометрической прогрессии с множителем {coef}"
                 else:
@@ -133,7 +133,7 @@ def callback_inline(call):
 
 
         if call.data == "das":
-            bot.send_message(call.message.chat.id, 'Пожалуйста, укажите почту')
+            bot.send_message(call.message.chat.id, 'СПАСИБО, НА ВАШ ПОЧТОВЫЙ ЯЩИК ПРИДЕТ СООБЩЕНИЕ С ДОКУМЕНТАМИ.')
 
         if call.data == "nets":
             bot.send_message(call.message.chat.id, 'Спасибо, что пользуетесь нашими услугами!')
