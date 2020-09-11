@@ -149,7 +149,7 @@ def send1_text(message):
         with smtplib.SMTP(host = "smtp.gmail.com",port=587) as smtp:
             smtp.ehlo()
             smtp.starttls()
-            smtp.login("investsiberiatech@gmail.com", "12735334")
+            smtp.login("siberiatech1@gmail.com", "12735334")
             smtp.send_message(email)
             print('Task Executed')
         bot.send_message(message.chat.id, 'СПАСИБО, НА ВАШ ПОЧТОВЫЙ ЯЩИК ПРИДЕТ СООБЩЕНИЕ С ДОКУМЕНТАМИ.') 
